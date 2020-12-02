@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+}
+
+:root {
+    --primary-color: #EF4444;
+    --width: 60vw;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    height: 10vh;
+    text-align: center;
+    color: #FECACA;
+}
+
+header {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+footer {
+    min-height: 20vh;
+    height: auto;
+}
+
+footer span {
+    font-size: 50px;
+}
+
+footer p{
+    width: var(--width);
+    margin: auto;
+}
+
+main {
+    width: var(--width);
+    height: 70vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main p {
+    color: var(--primary-color);
+}
+
+#user-input {
+    height: 20vh;
+    width: var(--width);
+    /* margin: 20px auto; */
+    display: block;
+}
+
+#btn-translate {
+        background-color: var(--primary-color);
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px 0;
+        color: #FECACA;
+}
+
+#translated-output {
+    height: 20vh;
+    width: var(--width);
+    margin: 20px auto;
+    display: block;
+    border: 2px solid black;
+}
