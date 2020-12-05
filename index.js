@@ -13,7 +13,13 @@ function translateToBananaLang() {
         .then( response => response.json() )
         .then( response => {
             // translatedOutput.innerText = response.contents.text;
+            if( response.error) {
+                throw new Error(response.error.message);
+            }
             translatedOutput.innerText = response.contents.translated;
+        })
+        .catch( err => {
+            alert( err.message );
         })
     }
 }
